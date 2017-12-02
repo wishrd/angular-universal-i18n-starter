@@ -1,17 +1,18 @@
 {
-  "name": "descar-t",
+  "name": "app",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "run-s build:client build:aot build:server",
-    "build:client": "ng build -prod --build-optimizer --app 0",
-    "build:aot": "ng build --aot --app 1",
+    "build:client": "node scripts/build.js",
+    "build:aot": "node scripts/build.js --server=true",
     "build:server": "webpack -p",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "i18n": "ng xi18n --output-path src/locale"
   },
   "private": true,
   "dependencies": {
@@ -52,6 +53,7 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2",
-    "webpack-node-externals": "^1.6.0"
+    "webpack-node-externals": "^1.6.0",
+    "yargs": "^10.0.3"
   }
 }

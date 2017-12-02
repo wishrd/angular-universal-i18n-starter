@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'descar-t' }),
+    BrowserModule.withServerTransition({ appId: 'app' }),
     HttpClientModule,
     BrowserTransferStateModule
   ],

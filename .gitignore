@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/src/locale/messages.xlf
 
 # dependencies
 /node_modules
@@ -32,6 +33,7 @@
 npm-debug.log
 testem.log
 /typings
+/package-lock.json
 
 # e2e
 /e2e/*.js

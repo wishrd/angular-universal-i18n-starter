@@ -1,0 +1,15 @@
+{
+  "locales": {
+    "es-ES": true,
+    "en-GB": false,
+    "en-US": false
+  },
+  "client": {
+    "command": "ng build -prod --build-optimizer --app 0",
+    "output": "browser"
+  },
+  "server": {
+    "command": "ng build --aot --app 1",
+    "output": "server"
+  }
+}
