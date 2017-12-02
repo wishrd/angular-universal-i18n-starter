@@ -18,7 +18,9 @@ function buildCommand(command, locale, output, needFile) {
 }
 
 for (let i = 0; i < locales.length; i++) {
-  execSync(buildCommand(baseCommand, locales[i], folder, project.locales[locales[i]]), { cwd: process.cwd() });
+  console.info(`Building for locale ${locales[i]}...`);
+  execSync(buildCommand(baseCommand, locales[i], folder, project.locales[locales[i]]), { cwd: process.cwd(), stdio: [0, 1, 2] });
+  console.info();
 }
 
 process.exit(0);
