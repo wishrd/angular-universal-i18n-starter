@@ -9,7 +9,8 @@
     "build:client": "node scripts/build.js",
     "build:aot": "node scripts/build.js --server=true",
     "build:server": "webpack -p",
-    "test": "ng test",
+    "test": "ng test --watch false",
+    "test:watch": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "i18n": "ng xi18n --output-path src/locale"
