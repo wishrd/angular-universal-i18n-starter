@@ -26,12 +26,14 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/platform-server": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "core-js": "^2.4.1",
     "express": "^4.16.2",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "0.0.46",
     "@angular/cli": "1.5.5",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
